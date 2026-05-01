@@ -12,16 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Imepac">
         <activity
+            android:name=".Tela_Perfil"
+            android:exported="true"
+            android:label="Imepac"
+            android:theme="@style/Theme.Imepac">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FormCadastro"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".FormLogin"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
     </application>
 
